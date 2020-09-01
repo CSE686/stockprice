@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>
+            Stock Price
+        </title>
+       <script>
+         function myFunction(n) {
+  var x = document.getElementById(n);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    if(n!='a')
+    document.getElementById('a').style.display= "none";
+    if(n!='i')
+    document.getElementById('i').style.display= "none";
+    if(n!='e')
+    document.getElementById('e').style.display= "none";
+    if(n!='am')
+    document.getElementById('am').style.display= "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+       </script>
+        <style>
+          .imgbt{
+            padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+    width: 100px;
+    border-radius: 10px;
+          }
+          .imgbt:hover{
+            cursor: pointer
+          }
+            body{
+                background-image: linear-gradient(120deg,yellow 25%,lightgreen 75%);
+            }
+            .container{
+                padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+
+            }
+            .container1{
+                padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    display: none;
+    
+            }
+        
+            /* Style The Dropdown Button */
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+    
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+    h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+    p { color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word; }
+        </style>
+    </head>
+    <body>
+        <div class="container"><center>       
+            <div class="dropdown">
+                <button class="dropbtn">Stocks</button>
+                <div class="dropdown-content">
+                  <img src="apple.jpg" class="imgbt" onclick="myFunction('a')" >
+                  <img src="intell.png" class="imgbt" onclick="myFunction('i')" >
+                  <img src="ebayy.png" class="imgbt" onclick="myFunction('e')" >
+                  <img src="amazon.jpg" class="imgbt" onclick="myFunction('am')" >
+                </div>
+              </div>
+            </center>
+        </div>
+        <br>
+        <div class="container1" id="a" >
+            <h1>Apple Inc.</h1>
+            <img src="apple.png"><img src="apple1.png">
+            <p>Above indicates that for 825 days the market was bearish on Apple, while for 382 days the market was bullish, and it was neutral for 51 days.</p>
+            <img src="apple2.png"><img src="apple3.png">
+            <p>As we can observe, the data lines from all the above graphs are just above and below the first quartile, or within the 95% confidence interval. This will indicate the significance of the correlation. If the line is above or below the dotted line, not in between, we can say that the correlation is significant, and that the adjusted closed value is correlated to time. In all plots, we can see that in the first year, there is a correlation between stock price and time. we can not say that there are any significant values that show any correlation, and finally, towards the end, we can again see some significant values, and it would be beneficial to dive deeper into these observations.
+            </p>
+        </div>
+        <br>
+        <div class="container1" id="i">
+            <h1>Intel Corporation</h1>
+            <img src="intel.png"><img src="intel1.png">
+            <p>Above indicates that for 825 days the market was bearish on Apple, while for 382 days the market was bullish, and it was neutral for 51 days.</p>
+            <img src="intel2.png"><img src="intel3.png">
+            <p>As we can observe, the data lines from all the above graphs are just above and below the first quartile, or within the 95% confidence interval. This will indicate the significance of the correlation. If the line is above or below the dotted line, not in between, we can say that the correlation is significant, and that the adjusted closed value is correlated to time. In all plots, we can see that in the first year, there is a correlation between stock price and time. we can not say that there are any significant values that show any correlation, and finally, towards the end, we can again see some significant values, and it would be beneficial to dive deeper into these observations.
+            </p>
+        </div>
+        <br>
+        <div class="container1" id="e">
+            <h1>eBay Inc.</h1>
+            <img src="ebay.png"><img src="ebay1.png">
+            <p>Above indicates that for 825 days the market was bearish on Apple, while for 382 days the market was bullish, and it was neutral for 51 days.</p>
+            <img src="ebay2.png"><img src="ebay3.png">
+            <p>As we can observe, the data lines from all the above graphs are just above and below the first quartile, or within the 95% confidence interval. This will indicate the significance of the correlation. If the line is above or below the dotted line, not in between, we can say that the correlation is significant, and that the adjusted closed value is correlated to time. In all plots, we can see that in the first year, there is a correlation between stock price and time. we can not say that there are any significant values that show any correlation, and finally, towards the end, we can again see some significant values, and it would be beneficial to dive deeper into these observations.
+            </p>
+        </div>
+        <br>
+        <div class="container1" id="am">
+            <h1>Amazon.com Inc.</h1>
+            <img src="amazon.png"><img src="amazon1.png">
+            <p>Above indicates that for 825 days the market was bearish on Apple, while for 382 days the market was bullish, and it was neutral for 51 days.</p>
+            <img src="amazon2.png"><img src="amazon3.png">
+            <p>As we can observe, the data lines from all the above graphs are just above and below the first quartile, or within the 95% confidence interval. This will indicate the significance of the correlation. If the line is above or below the dotted line, not in between, we can say that the correlation is significant, and that the adjusted closed value is correlated to time. In all plots, we can see that in the first year, there is a correlation between stock price and time. we can not say that there are any significant values that show any correlation, and finally, towards the end, we can again see some significant values, and it would be beneficial to dive deeper into these observations.
+            </p>
+        </div>
+    </body>
+</html>
+
+
+
+    
+    
